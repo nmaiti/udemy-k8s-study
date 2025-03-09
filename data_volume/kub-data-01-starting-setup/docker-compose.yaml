@@ -1,0 +1,10 @@
+version: "3"
+services:
+  stories:
+    build: .
+    volumes:
+      - "$PWD/stories:/app/story"
+    ports:
+      - 810:3000
+volumes:
+  stories: 
